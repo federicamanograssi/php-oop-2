@@ -2,25 +2,31 @@
 ini_set('display_errors', 1);
 
 //file necessari
-require 'classes/user.php';
+require_once 'classes/user.php';
+require_once 'classes/admin.php';
     
-$ppl01 = new User('utonto01', 'amministratore');
+$ppl01 = new Admin('utonto01');
 $ppl01->user_id = 01;
 $ppl01->user_name="Federica";
 $ppl01->user_lastname="Federica";
 $ppl01->user_email="federica@gmail.com";
+$ppl01->setRole();
 
-$ppl02 = new User('utonto02', 'moderatore');
+$ppl02 = new User('utonto02');
 $ppl02->user_id = 02;
 $ppl02->user_name="Laura";
 $ppl02->user_lastname="Laura";
 $ppl02->user_email="laura@gmail.com";
+$ppl02->setRole();
 
-$ppl03 = new User('utonto03', 'utente');
+
+$ppl03 = new User('utonto03');
 $ppl03->user_id = 03;
 $ppl03->user_name="Michela";
 $ppl03->user_lastname="Michela";
 $ppl03->user_email="michela@gmail.com";
+$ppl03->setRole();
+
 
 $users = [$ppl01,$ppl02,$ppl03];
 

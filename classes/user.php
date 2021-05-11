@@ -8,9 +8,11 @@
         public $user_lastname;
         public $user_email;
 
-        public function __construct($_user_nickname,$_user_role)
+        public function __construct($_user_nickname)
         {
             $this->user_nickname = $_user_nickname;
-            $this->user_role = $_user_role;
+        }
+        public function setRole(){
+            $this->user_role = "utente";
         }
     }
