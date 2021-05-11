@@ -1,0 +1,9 @@
+USER
+
+ID              INT INCR
+RUOLO           VARCHAR 20
+NICKNAME        VARCHAR 20
+NOME            VARCHAR 20
+COGNOME         VARCHAR 20
+CANMODIFY       BOOLEAN
+EMAIL           VARCHAR 50
