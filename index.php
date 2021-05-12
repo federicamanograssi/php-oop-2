@@ -2,6 +2,7 @@
 ini_set('display_errors', 1);
 
 //file necessari
+require_once 'traits/users_main.php';
 require_once 'classes/user.php';
 require_once 'classes/admin.php';
     
